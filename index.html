@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Антон лох</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            width: 300px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Антон пупс</h1>
+    <img src="anton.jpg" alt="anton">
+    <br>
+    <button onclick="playMusic()">Вмикай музон</button>
+
+    <audio id="myAudio" src="music.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            const audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
